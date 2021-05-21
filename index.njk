@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <section class="grid" style="grid-template-columns: repeat(16, minmax(0, 1fr));">
+  <section class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
       {% for icon in collections.icons %}
         <figure class="p-4 flex items-center justify-center">
           <img src="{{icon}}" alt="Icon" width="24" height="24" decoding="async" loading="lazy">
