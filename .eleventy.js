@@ -4,11 +4,11 @@ const sharp = require("sharp")
 const now = String(Date.now())
 
 async function imageShortcode(src, alt, sizes = "100vw") {
-  let metadata = await Image(`./icons/${src}.png`, {
+  let metadata = await Image(`./images/${src}.png`, {
     widths: [24],
     formats: ["avif", "jpeg"],
-    urlPath: "/icons/",
-    outputDir: "./_site/icons/"
+    urlPath: "/images/",
+    outputDir: "./_site/images/"
   });
   let imageAttributes = {
     alt,
@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 // Run search for images in /gallery and /sponsors
-const iconImages = fg.sync(['./icons/*', '!**/_site']);
+const iconImages = fg.sync(['icons/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
@@ -35,9 +35,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
 
   eleventyConfig.addPassthroughCopy("icons")
+  eleventyConfig.addPassthroughCopy("fonts")
+  eleventyConfig.addPassthroughCopy("images")
 
   //Create collection of gallery images
   eleventyConfig.addCollection('icons', function(collection) {
     return iconImages;
   });
+
+  return {
+    htmlTemplateEngine: "njk",
+  };
 };
