@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 // Run search for images in /gallery and /sponsors
-const iconImages = fg.sync(['**/icons/*', '!**/_site']);
+const iconImages = fg.sync(['./icons/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
