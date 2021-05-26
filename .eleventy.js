@@ -37,6 +37,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("icons")
   eleventyConfig.addPassthroughCopy("fonts")
   eleventyConfig.addPassthroughCopy("images")
+  eleventyConfig.addPassthroughCopy("majesticons-v2-free.zip")
 
   //Create collection of gallery images
   eleventyConfig.addCollection('icons', function(collection) {

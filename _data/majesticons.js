@@ -13,7 +13,7 @@ module.exports = function () {
           encoding: "utf8",
         });
         const namePlain = path.parse(name).name;
-        const sourceWithClass = source.replace("<svg", '<svg class="w-6 lg:w-8 h-6 lg:h-8"');
+        const sourceWithClass = source.replace("<svg", '<svg class="w-6 xl:w-12 h-6 xl:h-12"');
         return { name, source, sourceWithClass, nameWithoutExtension, namePlain };
       })
     );

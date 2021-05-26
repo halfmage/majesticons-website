@@ -16,7 +16,8 @@ module.exports = {
       primary: '#FC0341',
     },
     fontFamily: {
-      'sans': ['Nunito', 'sans-serif']
+      'sans': ['Nunito', 'sans-serif'],
+      'mono': ['monospace']
     }
   },
   variants: {},
