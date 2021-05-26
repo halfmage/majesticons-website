@@ -20,6 +20,9 @@
     "tailwindcss": "^2.1.2"
   },
   "dependencies": {
-    "fast-glob": "^3.2.5"
+    "fast-glob": "^3.2.5",
+    "fs": "^0.0.1-security",
+    "majesticons": "^1.1.2",
+    "path": "^0.12.7"
   }
 }

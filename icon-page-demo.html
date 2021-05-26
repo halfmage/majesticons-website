@@ -1,6 +1,6 @@
 <div class="text-center" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'line' }" id="tab_wrapper">
 <script>
-    var iconData = {{ majesticonsFree | safe }};
+    var iconData = {{ majesticons | safe }};
     function loadIconData() {
         return {
             search: "",
