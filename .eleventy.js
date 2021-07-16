@@ -4,8 +4,8 @@ const sharp = require("sharp")
 const now = String(Date.now())
 
 async function imageShortcode(src, alt, sizes = "100vw") {
-  let metadata = await Image(`./images/${src}.png`, {
-    widths: [24],
+  let metadata = await Image(`images/${src}`, {
+    widths: [30, 300, 600, 1200, 1600],
     formats: ["avif", "jpeg"],
     urlPath: "/images/",
     outputDir: "./_site/images/"
@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 // Run search for images in /gallery and /sponsors
-const iconImages = fg.sync(['icons/*', '!**/_site']);
+const iconImages = fg.sync(['**/icons-png/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {

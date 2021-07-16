@@ -1,4 +1,3 @@
-const { warmGray } = require('tailwindcss/colors')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -12,13 +11,14 @@ module.exports = {
     colors: {
       white: '#fff',
       black: '#000',
-      gray: warmGray,
-      primary: '#FC0341',
+      gray: colors.blueGray,
+      primary: colors.blue,
+      blue: colors.blue,
+      purple: colors.indigo
     },
     fontFamily: {
-      'sans': ['Nunito', 'sans-serif'],
-      'mono': ['monospace']
-    }
+      'sans': ['Manrope', 'sans-serif']
+    },
   },
   variants: {},
   plugins: [],

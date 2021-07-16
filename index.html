@@ -1,40 +1,185 @@
 ---
+title: Homepage
 layout: base
-title: v2 Update! ✨
-setType: Free
 ---
 
-{% include "hero.html" %}
+<div class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
+  <div class="container mx-auto px-4 py-8 md:py-24 xl:py-40 xl:grid grid-cols-12 items-center">
 
-<div class="container mx-auto px-4">
-  <div class="grid xl:grid-cols-12 md:grid-cols-8 sm:grid-cols-6 grid-cols-4">
-    {% for icon in majesticons %}
-    <div class="py-4 px-2 md:py-8 inline-flex items-center justify-center flex-col text-center relative rounded-lg hover:bg-gray-200 group">
-      {{ icon.sourceWithClass | safe }}
-      <div class="w-full truncate px-2 text-gray-500 mt-4 text-xs">{{ icon.nameWithoutExtension }}</div>
-      <div class="sr-only" id="icon-{{ icon.nameWithoutExtension }}">{{ icon.source }}</div>
-      <button class="absolute bottom-4 opacity-0 group-hover:opacity-100 icon-clip inline-flex items-center px-4 py-2 shadow-lg text-sm font-bold text-white bg-primary rounded-full hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600" data-clipboard-target="#icon-{{ icon.nameWithoutExtension }}">Copy SVG</button>
+    <div class="col-span-6 xl:pr-28 text-center xl:text-left">
+      <h2 class="text-3xl md:text-5xl font-bold" style="line-height:1.3;">3000+ line icons for designers and developers.</h2>
+      <p class="text-base md:text-lg my-8 text-gray-500" style="line-height:1.5;">Majesticons Pro is a icon pack of 3200+ customizable line vector icons. Made with Figma, and based on 24 px grid system, 2px stroke width and balanced white spaces.</p>
+      <div class="flex justify-center xl:justify-start">
+        <a class="transition-colors mr-4 font-bold bg-primary-500 hover:bg-primary-600 text-white text-lg rounded py-3 px-6 shadow" target="_blank" href="https://gum.co/majesticons">
+          Get them for $59
+        </a>
+        <a class="transition-colors font-bold bg-gray-50 hover:bg-white text-gray-700 text-lg rounded py-3 px-6 shadow" href="/icons">
+          Explore icons
+        </a>
+      </div>
     </div>
-    {% endfor %}
+
+    <div class="mt-8 xl:mt-0 col-span-6">
+      <div class="relative">
+        <video width="640" height="320" class="w-full shadow-xl rounded" loop muted autoplay>
+          <source src="images/majesticons-preview.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <div class="absolute w-full text-center mt-4 text-gray-500">Customize icons directly in Figma</div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container mx-auto py-16 px-4 text-center text-gray-600">
-  Wow you made it the bottom! This project was created with Figma, 11ty and tailwind by <a href="https://twitter.com/home" class="underline" target="_blank">Gerrit Halfmann.</a>
+<section class="container px-5 py-24 mx-auto">
+  <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+    <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+      <div class="w-20 h-20 inline-flex items-center justify-center rounded-full from-primary-600 to-purple-600 bg-gradient-to-b text-white mb-5 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+      <div class="flex-grow">
+        <h2 class="text-gray-900 text-xl title-font font-bold mb-3">Beautiful line icons</h2>
+        <p class="leading-relaxed text-base">This premium iconset </p>
+      </div>
+    </div>
+    <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+      <div class="w-20 h-20 inline-flex items-center justify-center rounded-full from-primary-600 to-purple-600 bg-gradient-to-b text-white mb-5 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+          <circle cx="6" cy="6" r="3"></circle>
+          <circle cx="6" cy="18" r="3"></circle>
+          <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+        </svg>
+      </div>
+      <div class="flex-grow">
+        <h2 class="text-gray-900 text-xl title-font font-bold mb-3">The Catalyzer</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+      </div>
+    </div>
+    <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+      <div class="w-20 h-20 inline-flex items-center justify-center rounded-full from-primary-600 to-purple-600 bg-gradient-to-b text-white mb-5 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+      <div class="flex-grow">
+        <h2 class="text-gray-900 text-xl title-font font-bold mb-3">Neptune</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bg-gray-100">
+  <section class="container mx-auto px-4 py-8 md:py-32">
+    <div class="grid grid-cols-12 items-center">
+      <div class="col-span-6 pr-32">
+        <h2 class="text-3xl md:text-5xl font-bold" style="line-height:1.3;">3000+ line icons for designers and developers.</h2>
+        <p class="text-base md:text-lg my-8 text-gray-500" style="line-height:1.5;">Majesticons Pro is a icon pack of 3200+ customizable line vector icons. Made with Figma, and based on 24 px grid system, 2px stroke width and balanced white spaces.</p>
+      </div>
+      <div class="col-span-6">
+        <div class="grid grid-cols-8 gap-8 bg-white p-16 shadow-lg rounded-lg">
+          {% for icon in collections.icons.slice(0, 48) %}
+            <img src="{{icon}}" alt="" loading="lazy" decoding="async" class="mx-auto">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
-<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
-<script>
-  var clipboard = new ClipboardJS(".icon-clip");
-
-  clipboard.on("success", function (event) {
-    console.info("Action:", event.action);
-    console.info("Text:", event.text);
-    //console.info("Trigger:", event.trigger);
-    event.clearSelection();
-    event.trigger.textContent = "Copied!🎉";
-    window.setTimeout(function () {
-      event.trigger.textContent = "Copy SVG";
-    }, 1500);
-  });
-</script>
+<div class="container px-5 py-24 mx-auto">
+  <div class="flex flex-col text-center w-full mb-20">
+    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+  </div>
+  <div class="flex flex-wrap justify-center -m-4">
+    <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+      <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+        <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
+        <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+        <p class="flex items-center text-gray-600 mb-2">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>380 line icons
+        </p>
+        <p class="flex items-center text-gray-600 mb-2">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>Mixed icons from all categories
+        </p>
+        <p class="flex items-center text-gray-600 mb-6">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>Community Figma file
+        </p>
+        <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
+          Open free Figma file
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <p class="text-xs text-gray-500 mt-3 text-center">You would need a figma account.</p>
+      </div>
+    </div>
+    <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+      <div class="h-full p-6 rounded-lg border-2 border-primary-500 flex flex-col relative overflow-hidden">
+        <span class="bg-primary-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">LIFETIME UPDATES</span>
+        <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+        <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+          <span>$59</span>
+        </h1>
+        <p class="flex items-center text-gray-600 mb-2">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>3000+ line icons
+        </p>
+        <p class="flex items-center text-gray-600 mb-2">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>Sorted in 48 categories
+        </p>
+        <p class="flex items-center text-gray-600 mb-2">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>Figma file with components
+        </p>
+        <p class="flex items-center text-gray-600 mb-2">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>Solid & Duotone styles soon
+        </p>
+        <p class="flex items-center text-gray-600 mb-6">
+          <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5"></path>
+            </svg>
+          </span>Lifetime free updates
+        </p>
+        <button class="flex items-center mt-auto text-white bg-primary-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-primary-600 rounded">
+          Purchase on Gumroad
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <p class="text-xs text-gray-500 mt-3 text-center">Will open in a new tab.</p>
+      </div>
+    </div>
+  </div>
+</div>
