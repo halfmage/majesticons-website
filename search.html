@@ -4,7 +4,7 @@ layout: base
 
 <div class="text-center" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'line' }" id="tab_wrapper">
   <script>
-      var iconData = {{ iconsNew | safe }};
+      var iconData = {{ majesticonsLine | safe }};
       function loadIconData() {
           return {
               search: "",
@@ -31,7 +31,7 @@ layout: base
         x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
         placeholder="Search for icon names e.g. 'cloud-code, book-music or textbox-clock'"
         type="search"
-        class="block w-full bg-white shadow rounded px-4 py-3 dark:bg-gray-800" />
+        class="block w-full bg-white shadow rounded px-4 py-3 dark:bg-gray-800 mt-4" />
       </div>
   
           <div class="grid gap-4" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))">
