@@ -17,7 +17,7 @@ module.exports = {
       purple: colors.indigo
     },
     fontFamily: {
-      'sans': ['Manrope', 'sans-serif']
+      'sans': ['Inter', 'sans-serif']
     },
   },
   variants: {},
