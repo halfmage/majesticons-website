@@ -1,6 +1,7 @@
 const fg = require("fast-glob");
 const path = require("path");
 const fs = require("fs");
+
 module.exports = function() {
   return new Promise(async (resolve, reject) => {
     const iconFolder = path.resolve(__dirname, "../node_modules/majesticons/solid/");
