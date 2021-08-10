@@ -1,4 +1,4 @@
-<div x-data="loadIconDataSolid()">
+<div x-data="loadIconData()">
   <input
     x-ref="searchField"
     x-model="search"
@@ -22,7 +22,7 @@
 
 <script>
 var iconDataSolid = {{ majesticonsSolid | safe }};
-function loadIconDataSolid() {
+function loadIconData() {
     return {
         search: "",
         iconDataSolid,
