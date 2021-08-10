@@ -1,17 +1,37 @@
-<div x-data="loadIconData()">
+<script>
+  var iconDataSolid = {{ majesticonsSolid | safe }};
+  function loadIconDataSolid() {
+      return {
+          search: "",
+          iconDataSolid,
+          get filteredIconsSolid() {
+              if (this.search === "") {
+                  return this.iconDataSolid;
+              }
+              return this.iconData.filter((item) => {
+                  return item.name
+                      .toLowerCase()
+                      .includes(this.search.toLowerCase());
+              });
+          },
+      };
+  }
+</script>
+
+<div x-data="loadIconDataSolid()">
   <input
     x-ref="searchField"
     x-model="search"
     x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
     placeholder="Search for icon names e.g. 'cloud-code, book-music or textbox-clock'"
     type="search"
-    class="block w-full bg-white shadow rounded px-4 py-3 dark:bg-gray-800 mt-4"
+    class="block w-full bg-white shadow rounded px-4 py-3 dark:bg-gray-800 my-4"
   />
 
   <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(120px, 1fr))">
     <template x-for="item in filteredIconsSolid" :key="item">
       <div class="flex flex-col items-center p-3">
-        <div class="" x-html="item.sourceWithClass"></div>
+        <div x-html="item.sourceWithClass"></div>
         <div class="text-xs w-full truncate text-center mt-2 text-gray-400" x-text="item.namePlain"></div>
         <div class="sr-only" x-bind:id="item.namePlain" x-text="item.source"></div>
         <!-- <div x-bind:data-clipboard-target="'#' + item.namePlain" class="icon-copy-trigger hover:underline cursor-pointer font-bold transition-opacity group-hover:opacity-100 opacity-0 ">Copy SVG</div> -->
@@ -19,23 +39,3 @@
     </template>
   </div>
 </div>
-
-<script>
-var iconDataSolid = {{ majesticonsSolid | safe }};
-function loadIconData() {
-    return {
-        search: "",
-        iconDataSolid,
-        get filteredIconsSolid() {
-            if (this.search === "") {
-                return this.iconDataSolid;
-            }
-            return this.iconDataSolid.filter((item) => {
-                return item.name
-                    .toLowerCase()
-                    .includes(this.search.toLowerCase());
-            });
-        },
-    };
-}
-</script>
