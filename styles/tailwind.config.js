@@ -13,8 +13,8 @@ module.exports = {
       white: '#fff',
       black: '#000',
       gray: colors.trueGray,
-      primary: '#59C173',
-      secondary: '#5D26C1',
+      primary: '#396afc',
+      secondary: '#12F4F0',
       tert: '#a17fe0',
     },
     fontFamily: {
