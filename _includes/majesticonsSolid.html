@@ -19,20 +19,26 @@
 </script>
 
 <div x-data="loadIconDataSolid()">
-  <input
+
+  <div class="relative">
+    <input
     x-ref="searchField"
     x-model="search"
     x-on:keydown.window.prevent.slash="$refs.searchField.focus()"
-    placeholder="Search for icon names e.g. 'cloud-code, book-music or textbox-clock'"
+    placeholder="Search for icon names"
     type="search"
-    class="block w-full bg-white shadow rounded px-4 py-3 dark:bg-gray-800 my-4"
+    class="block w-full bg-white shadow rounded-full px-4 py-3 pl-16 dark:bg-gray-800 my-4 text-center"
   />
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 absolute left-4 top-3" viewBox="0 0 24 24" fill="none">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9 7 7 0 0 0 9.9 9.9z"/>
+  </svg>
+  </div>
 
   <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(120px, 1fr))">
     <template x-for="item in filteredIconsSolid" :key="item">
       <div class="flex flex-col items-center p-3">
         <div x-html="item.sourceWithClass"></div>
-        <div class="text-xs w-full truncate text-center mt-2 text-gray-400" x-text="item.namePlain"></div>
+        <div class="text-xs w-full truncate text-center mt-2 text-gray-400 dark:text-gray-600" x-text="item.namePlain"></div>
         <div class="sr-only" x-bind:id="item.namePlain" x-text="item.source"></div>
         <!-- <div x-bind:data-clipboard-target="'#' + item.namePlain" class="icon-copy-trigger hover:underline cursor-pointer font-bold transition-opacity group-hover:opacity-100 opacity-0 ">Copy SVG</div> -->
       </div>

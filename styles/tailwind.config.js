@@ -13,8 +13,9 @@ module.exports = {
       white: '#fff',
       black: '#000',
       gray: colors.trueGray,
-      primary: '#12F4F0',
-      secondary: '#FF0DB7',
+      primary: '#59C173',
+      secondary: '#5D26C1',
+      tert: '#a17fe0',
     },
     fontFamily: {
       'sans': ['Inter', 'sans-serif']
