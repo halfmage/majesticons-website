@@ -7,14 +7,14 @@ layout: base
 
 <div class="container mx-auto px-4" x-data="{ selected: 'line-icons' }">
   <nav class="">
-    <ul class="flex justify-center">
-      <li class="px-8 py-3 rounded-full" x-bind:class="{ 'bg-primary text-white': selected === 'line-icons' }">
+    <ul class="inline-flex justify-center p-2 bg-gray-800 rounded-lg mx-auto">
+      <li class="px-8 py-2 text-gray-400 rounded" x-bind:class="{ 'bg-gray-200 text-gray-800': selected === 'line-icons' }">
         <a href="#line-icons" x-on:click="selected = 'line-icons'" class="flex">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm0 0v8m1 0c5.6 0 7-4.667 7-7-5.6 0-7 4.667-7 7zm0 0h-1m-1 0c-5.6 0-7-4.667-7-7 5.6 0 7 4.667 7 7zm0 0h1"/></svg>
           Line
         </a>
       </li>
-      <li class="px-8 py-3 rounded-full" x-bind:class="{ 'bg-primary text-white': selected === 'solid-icons' }">
+      <li class="px-8 py-2 text-gray-400 rounded" x-bind:class="{ 'bg-gray-200 text-gray-800': selected === 'solid-icons' }">
         <a href="#solid-icons" x-on:click="selected = 'solid-icons'" class="flex">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none"><path fill="currentColor" d="M4 14c0 2.333 1.4 7 7 7 0-2.333-1.4-7-7-7zm3-6V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5S7 9.667 7 8zm13 6c0 2.333-1.4 7-7 7 0-2.333 1.4-7 7-7z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21c-5.6 0-7-4.667-7-7 5.6 0 7 4.667 7 7zm0 0h1m0 0v-8m0 8h1m-1-8c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm1 8c5.6 0 7-4.667 7-7-5.6 0-7 4.667-7 7z"/></svg>
           Solid
@@ -22,10 +22,10 @@ layout: base
       </li>
     </ul>
   </nav>
-  <div x-show="selected === 'line-icons'" class="p-4">
+  <div x-show="selected === 'line-icons'" class="py-4">
     {% include "majesticonsLine.html" %}
   </div>
-  <div x-show="selected === 'solid-icons'" class="p-4">
+  <div x-show="selected === 'solid-icons'" class="py-4">
     {% include "majesticonsSolid.html" %}
   </div>
 </div>

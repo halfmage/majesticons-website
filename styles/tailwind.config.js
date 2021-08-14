@@ -12,9 +12,9 @@ module.exports = {
     colors: {
       white: '#fff',
       black: '#000',
-      gray: colors.trueGray,
-      primary: '#396afc',
-      secondary: '#12F4F0',
+      gray: colors.coolGray,
+      primary: '#06B6D4',
+      secondary: '#3B82F6',
       tert: '#a17fe0',
     },
     fontFamily: {
