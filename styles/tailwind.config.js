@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  darkMode: 'media',
   purge: {
     content: ['_site/**/*.html'],
     options: {
@@ -11,13 +12,13 @@ module.exports = {
     colors: {
       white: '#fff',
       black: '#000',
-      gray: colors.blueGray,
-      primary: colors.blue,
-      blue: colors.blue,
-      purple: colors.indigo
+      gray: colors.coolGray,
+      primary: '#06B6D4',
+      secondary: '#3B82F6',
+      tert: '#a17fe0',
     },
     fontFamily: {
-      'sans': ['Manrope', 'sans-serif']
+      'sans': ['Inter', 'sans-serif']
     },
   },
   variants: {},
