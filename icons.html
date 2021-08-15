@@ -3,7 +3,7 @@ layout: base
 title: PNG Preview
 ---
 
-<div class="container mx-auto px-4 text-center py-16">
+<div class="container mx-auto px-4 text-center py-16 pb-8">
   <h1 class="text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight">
     <span class="text-gradient bg-gradient-to-r from-primary to-secondary p-1">Majesticons Pro</span> <br>
     <span class="inline-block mt-2">All Icons png preview</span>
@@ -14,9 +14,9 @@ title: PNG Preview
 </div>
 
 <div class="container mx-auto px-4 py-16">
-  <div class="grid gap-4 p-4 dark:bg-gray-400 rounded" style="grid-template-columns: repeat(20, minmax(0, 1fr));">
+  <div class="grid gap-2" style="grid-template-columns: repeat(20, minmax(0, 1fr));">
     {% for icon in collections.icons %}
-      <img src="/{{ icon }}" alt="" loading="lazy" decoding="async" class="mx-auto mb-4">
+      <img src="/{{ icon }}" alt="" loading="lazy" decoding="async" class="bg-gray-400 mb-2 rounded p-3 hover:bg-gray-50 transition-color">
     {% endfor %}
   </div>
 </div>
