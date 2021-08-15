@@ -14,9 +14,11 @@ title: PNG Preview
 </div>
 
 <div class="container mx-auto px-4 py-16">
-  <div class="grid gap-2" style="grid-template-columns: repeat(20, minmax(0, 1fr));">
+  <div class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(64px, 1fr))">
     {% for icon in collections.icons %}
-      <img src="/{{ icon }}" alt="" loading="lazy" decoding="async" class="bg-gray-400 mb-2 rounded p-3 hover:bg-gray-50 transition-color">
+      <div class="bg-gray-600 rounded p-3 hover:bg-gray-50 transition-color">
+        <img src="/{{ icon }}" alt="" loading="lazy" decoding="async" class="mx-auto">
+      </div>
     {% endfor %}
   </div>
 </div>
