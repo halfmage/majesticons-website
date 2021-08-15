@@ -1,21 +1,20 @@
 ---
 layout: base
+title: PNG Preview
 ---
 
-<div class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
-  <div class="container mx-auto px-4 py-8 md:py-24 text-center">
-  <h2 class="text-3xl md:text-5xl font-bold" style="line-height:1.3;">Majesticons preview</h2>
-  <p class="text-base md:text-lg my-8 text-gray-500" style="line-height:1.5;">
+<div class="container mx-auto px-4 text-center py-16">
+  <h1 class="text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+    <span class="text-gradient bg-gradient-to-r from-primary to-secondary p-1">Majesticons Pro</span> <br>
+    <span class="inline-block mt-2">All Icons png preview</span>
+  </h1>
+  <p class="text-gray-400 mt-8 md:text-xl leading-relaxed max-w-prose mx-auto">
     Preview of all 3175 line icons. Stay calm that is a lot to load!
-  </p> 
-    <a class="transition-colors mr-4 font-bold bg-primary-500 hover:bg-primary-600 text-white text-lg rounded py-3 px-6 shadow" rel="noopener noreferrer" target="_blank" href="https://gum.co/majesticons">
-      Get all icons (Figma, SVG)
-    </a>
-</div>
+  </p>
 </div>
 
 <div class="container mx-auto px-4 py-16">
-  <div class="grid gap-4" style="grid-template-columns: repeat(20, minmax(0, 1fr));">
+  <div class="grid gap-4 p-4 dark:bg-gray-400 rounded" style="grid-template-columns: repeat(20, minmax(0, 1fr));">
     {% for icon in collections.icons %}
       <img src="/{{ icon }}" alt="" loading="lazy" decoding="async" class="mx-auto mb-4">
     {% endfor %}
