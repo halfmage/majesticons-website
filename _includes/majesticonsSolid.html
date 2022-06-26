@@ -8,7 +8,7 @@
               if (this.search === "") {
                   return this.iconDataSolid;
               }
-              return this.iconData.filter((item) => {
+              return this.iconDataSolid.filter((item) => {
                   return item.name
                       .toLowerCase()
                       .includes(this.search.toLowerCase());
