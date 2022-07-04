@@ -34,10 +34,10 @@
   </svg>
   </div>
 
-  <div class="grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(100px, 1fr))">
+  <div class="grid gap-2 grid-cols-12">
     <template x-for="item in filteredIcons" :key="item">
-      <div class="flex flex-col items-center p-3 rounded bg-gray-800">
-        <div class="my-8" x-html="item.sourceWithClass"></div>
+      <div class="col-span-4 md:col-span-3 xl:col-span-1 flex flex-col items-center p-3 rounded ">
+        <div class="my-4" x-html="item.sourceWithClass"></div>
         <div class="text-xs w-full truncate text-center text-gray-500" x-text="item.namePlain"></div>
         <div class="sr-only" x-bind:id="item.namePlain" x-text="item.source"></div>
         <!-- <div x-bind:data-clipboard-target="'#' + item.namePlain" class="icon-copy-trigger hover:underline cursor-pointer font-bold transition-opacity group-hover:opacity-100 opacity-0 ">Copy SVG</div> -->

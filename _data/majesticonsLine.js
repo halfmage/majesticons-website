@@ -14,7 +14,7 @@ module.exports = function() {
         const source = fs.readFileSync(path.resolve(iconFolder, name), {
           encoding: "utf8",
         });
-        const sourceWithClass = source.replace('<svg', '<svg class="w-7 h-7"');
+        const sourceWithClass = source.replace('<svg', '<svg class="w-8 h-8"');
         return {
           name,
           source,
