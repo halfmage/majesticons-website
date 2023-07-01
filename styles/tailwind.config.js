@@ -10,6 +10,7 @@ module.exports = {
       gray: colors.gray,
       primary: '#06B6D4',
       secondary: '#3B82F6',
+      yellow: colors.yellow
     },
     fontFamily: {
       'sans': ['Inter', 'sans-serif']
