@@ -5,29 +5,115 @@ layout: base
 
 {% include "hero.html" %}
 
-<div class="container mx-auto px-4" x-data="{ selected: 'line-icons' }">
-  <nav class="text-center">
-    <ul class="inline-flex justify-center py-2 px-1 bg-gray-800 rounded-full">
-      <li class="px-8 py-2 hover:bg-gray-500 hover:text-gray-50 rounded-full mx-1" x-bind:class="{ 'bg-white text-gray-800': selected === 'line-icons' }">
-        <a href="#line-icons" x-on:click="selected = 'line-icons'" class="flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm0 0v8m1 0c5.6 0 7-4.667 7-7-5.6 0-7 4.667-7 7zm0 0h-1m-1 0c-5.6 0-7-4.667-7-7 5.6 0 7 4.667 7 7zm0 0h1"/></svg>
-          Line
-        </a>
-      </li>
-      <li class="px-8 py-2 hover:bg-gray-500 hover:text-gray-50 rounded-full mx-2" x-bind:class="{ 'bg-white text-gray-800': selected === 'solid-icons' }">
-        <a href="#solid-icons" x-on:click="selected = 'solid-icons'" class="flex">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="none">
-          <path fill="currentColor" d="M4 14c0 2.333 1.4 7 7 7 0-2.333-1.4-7-7-7zm3-6V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5S7 9.667 7 8zm13 6c0 2.333-1.4 7-7 7 0-2.333 1.4-7 7-7z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21c-5.6 0-7-4.667-7-7 5.6 0 7 4.667 7 7zm0 0h1m0 0v-8m0 8h1m-1-8c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm1 8c5.6 0 7-4.667 7-7-5.6 0-7 4.667-7 7z"/></svg>
-          Solid
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div x-show="selected === 'line-icons'" class="py-2">
-    {% include "majesticonsLine.html" %}
+<div class="bg-white dark:bg-gray-900 py-24">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <h2 class="text-3xl mb-12 font-light">The finest and high-quality icon library for your projects.</h2>
+    <div class="grid grid-cols-12 gap-8">
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="text-base mb-4 font-semibold flex items-center">
+          <div class="p-2 bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-gray-400 mr-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 15 3-3-3-3m6 6h4M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+          </div>
+          3000+ icons (and growing)
+        </h3>
+        <p>The whole icon library is more then 3000 icons big and is growing monthly. All icons are crafted by hand carefully in Figma and are reviewed individually for optimal visual and code-performance output.</p>
+      </div>
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="text-base mb-4 font-semibold flex items-center">
+          <div class="p-2 bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-gray-400 mr-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 15 3-3-3-3m6 6h4M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+          </div>
+          Line & solid (more are coming)
+        </h3>
+        <p>Every single icon is available in line and solid style. While the stroke-width can be adjusted to your projects needs, the solid variant offers a perfectly fitting hover or active state. Furthermore solid icons are more suitable for small sizes.</p>
+      </div>
+      <div class="col-span-12 md:col-span-4">
+        <h3 class="text-base mb-4 font-semibold flex items-center">
+          <div class="p-2 bg-gray-200 text-gray-900 dark:bg-gray-800 dark:text-gray-400 mr-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 15 3-3-3-3m6 6h4M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+          </div>
+          Professional look
+        </h3>
+        <p>Great care has been given to give all icons the same optical size and room. All icons are based on a 24x24px grid and fine-tune with a decent amount of border radius. This gives all icons consistancy and a modern look at the same time.</p>
+      </div>
+    </div>
   </div>
-  <div x-show="selected === 'solid-icons'" class="py-2">
-    {% include "majesticonsSolid.html" %}
+</div>
+
+<div class="py-16 md:py-24">
+  <div class="max-w-screen-xl px-4 mx-auto grid grid-cols-12 items-center">
+      <div class="col-span-12 md:col-span-4">
+        <img src="/images/icon-detail.png" class="border-l border-gray-300" alt="">
+      </div>
+      <div class="col-span-12 md:col-span-8 pl-24">
+          <div class="text-2xl xl:text-3xl font-light">
+              Lorem ipsum dolor sit amet consectetur.
+          </div>
+          <p class="my-6 text-gray-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempora, officiis adipisci dolores vitae facere, reprehenderit autem hic, quasi corporis labore? Necessitatibus, officia obcaecati.
+          </p>
+          <ul class="block mb-6">
+            <li class="flex items-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="mr-4">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13.183c4.66 1.647 8 6.092 8 11.317m-8-12h8m-16 0H4m0 12c0-5.225 3.34-9.67 8-11.317m1.333 3.317h5.334c.736 0 1.333-.597 1.333-1.333V9.833c0-.736-.597-1.333-1.333-1.333h-5.334C12.597 8.5 12 9.097 12 9.833v5.334c0 .736.597 1.333 1.333 1.333Z"/>
+              </svg>
+              One-line vector element
+            </li>
+            <li class="flex items-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="mr-4">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13.183c4.66 1.647 8 6.092 8 11.317m-8-12h8m-16 0H4m0 12c0-5.225 3.34-9.67 8-11.317m1.333 3.317h5.334c.736 0 1.333-.597 1.333-1.333V9.833c0-.736-.597-1.333-1.333-1.333h-5.334C12.597 8.5 12 9.097 12 9.833v5.334c0 .736.597 1.333 1.333 1.333Z"/>
+              </svg>
+              One-line vector element
+            </li>
+            <li class="flex items-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="mr-4">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13.183c4.66 1.647 8 6.092 8 11.317m-8-12h8m-16 0H4m0 12c0-5.225 3.34-9.67 8-11.317m1.333 3.317h5.334c.736 0 1.333-.597 1.333-1.333V9.833c0-.736-.597-1.333-1.333-1.333h-5.334C12.597 8.5 12 9.097 12 9.833v5.334c0 .736.597 1.333 1.333 1.333Z"/>
+              </svg>
+              One-line vector element
+            </li>
+          </ul>
+          <a href="https://gumroad.com/l/IdGclx" class="button">
+            Buy now
+          </a>
+      </div>
+  </div>
+</div>
+
+<div class="py-16 md:py-24">
+  <div class="max-w-screen-xl px-4 mx-auto grid grid-cols-12 items-center">
+      <div class="col-span-12 md:col-span-8 pr-24">
+          <div class="text-2xl xl:text-3xl font-light">
+              Lorem ipsum dolor sit amet consectetur.
+          </div>
+          <p class="my-6 text-gray-700">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tempora, officiis adipisci dolores vitae facere, reprehenderit autem hic, quasi corporis labore? Necessitatibus, officia obcaecati.
+          </p>
+          <ul class="block mb-6">
+            <li class="flex items-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="mr-4">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13.183c4.66 1.647 8 6.092 8 11.317m-8-12h8m-16 0H4m0 12c0-5.225 3.34-9.67 8-11.317m1.333 3.317h5.334c.736 0 1.333-.597 1.333-1.333V9.833c0-.736-.597-1.333-1.333-1.333h-5.334C12.597 8.5 12 9.097 12 9.833v5.334c0 .736.597 1.333 1.333 1.333Z"/>
+              </svg>
+              One-line vector element
+            </li>
+            <li class="flex items-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="mr-4">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13.183c4.66 1.647 8 6.092 8 11.317m-8-12h8m-16 0H4m0 12c0-5.225 3.34-9.67 8-11.317m1.333 3.317h5.334c.736 0 1.333-.597 1.333-1.333V9.833c0-.736-.597-1.333-1.333-1.333h-5.334C12.597 8.5 12 9.097 12 9.833v5.334c0 .736.597 1.333 1.333 1.333Z"/>
+              </svg>
+              One-line vector element
+            </li>
+            <li class="flex items-center mb-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32" class="mr-4">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13.183c4.66 1.647 8 6.092 8 11.317m-8-12h8m-16 0H4m0 12c0-5.225 3.34-9.67 8-11.317m1.333 3.317h5.334c.736 0 1.333-.597 1.333-1.333V9.833c0-.736-.597-1.333-1.333-1.333h-5.334C12.597 8.5 12 9.097 12 9.833v5.334c0 .736.597 1.333 1.333 1.333Z"/>
+              </svg>
+              One-line vector element
+            </li>
+          </ul>
+          <a href="https://gumroad.com/l/IdGclx" class="button">
+            Buy now
+          </a>
+      </div>
+      <div class="col-span-12 md:col-span-4">
+        <img src="/images/icon-detail-2.png" class="border-r border-gray-300" alt="">
+      </div>
   </div>
 </div>
