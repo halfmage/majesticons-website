@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes animation-pattern {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animation-pattern {
+  animation: animation-pattern 120s linear infinite;
+}
+
 .button {
   @apply bg-gray-900 hover:bg-gray-600 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-gray-900 px-5 py-3 font-semibold text-center rounded-lg transition-colors; 
 }
