@@ -23,12 +23,12 @@ html {
 }
 
 .bg-iconpattern {
-  background-size: 700%;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
   .bg-iconpattern {
-    background-size: 220%;
+    background-size: cover;
   }
   .animation-pattern {
     animation: animation-pattern 120s linear infinite;
@@ -36,9 +36,9 @@ html {
 }
 
 .button {
-  @apply bg-gray-900 hover:bg-gray-600 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-gray-900 px-5 py-3 font-semibold text-center rounded-lg transition-colors inline-block ; 
+  @apply bg-gradient-to-r from-amber-500 to-orange-600 text-white leading-6 px-5 pt-2 pb-3 font-semibold text-center rounded-lg transition-colors inline-block; 
 }
 
 .button-outline {
-  @apply text-gray-900 dark:text-white border border-gray-900 dark:border-white px-5 py-3 font-semibold text-center rounded-lg transition-colors inline-block ; 
+  @apply text-gray-900 dark:text-white border border-gray-800 dark:border-gray-400 px-5 py-3 font-semibold text-center rounded-lg transition-colors inline-block ; 
 }
