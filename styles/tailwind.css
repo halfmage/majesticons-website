@@ -18,14 +18,27 @@ html {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .bg-iconpattern {
+    background-size: 170%;
+  }
+  .animation-pattern {
+    animation: animation-pattern 120s linear infinite;
+  }
+}
+
 .animation-pattern {
-  animation: animation-pattern 120s linear infinite;
+  animation: animation-pattern 200s linear infinite;
+}
+
+.bg-iconpattern {
+  background-size: 800%;
 }
 
 .button {
-  @apply bg-gray-900 hover:bg-gray-600 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-gray-900 px-5 py-3 font-semibold text-center rounded-lg transition-colors; 
+  @apply bg-gray-900 hover:bg-gray-600 dark:bg-white dark:hover:bg-gray-200 text-white dark:text-gray-900 px-5 py-3 font-semibold text-center rounded-lg transition-colors inline-block ; 
 }
 
 .button-outline {
-  @apply text-gray-900 dark:text-white border border-gray-900 dark:border-white px-5 py-3 font-semibold text-center rounded-lg transition-colors; 
+  @apply text-gray-900 dark:text-white border border-gray-900 dark:border-white px-5 py-3 font-semibold text-center rounded-lg transition-colors inline-block ; 
 }
