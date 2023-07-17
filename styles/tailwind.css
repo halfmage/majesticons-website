@@ -18,21 +18,21 @@ html {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .bg-iconpattern {
-    background-size: 170%;
-  }
-  .animation-pattern {
-    animation: animation-pattern 120s linear infinite;
-  }
-}
-
 .animation-pattern {
   animation: animation-pattern 200s linear infinite;
 }
 
 .bg-iconpattern {
-  background-size: 800%;
+  background-size: 700%;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-iconpattern {
+    background-size: 220%;
+  }
+  .animation-pattern {
+    animation: animation-pattern 120s linear infinite;
+  }
 }
 
 .button {
