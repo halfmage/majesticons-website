@@ -1,0 +1,11 @@
+{
+    "name": "Majesticons | The finest and high-quality icon library for your projects",
+    "short_name": "Majesticons",
+    "icons": [{
+        "src": "google-touch-icon.png",
+        "sizes": "512x512"
+    }],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen"
+}

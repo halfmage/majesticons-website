@@ -4,9 +4,15 @@
   {% include "meta.html" %}
   <link rel="stylesheet" href="/style.css?v={% version %}" />
   <script src="/js/alpine.js?v={% version %}"></script>
-  <script src="https://gumroad.com/js/gumroad.js"></script>
 </head>
-<body class="text-gray-100 bg-gray-900 font-sans">
+<body class="bg-white text-gray-950 dark:bg-gray-950 dark:text-gray-200 text-sm">
+
+  <div class="hidden py-2 text-gray-950" style="background: linear-gradient(90deg, rgba(179, 223, 253, 0.50) 0%, rgba(255, 255, 255, 0.50) 18.75%, rgba(237, 77, 51, 0.50) 39.58%, rgba(244, 211, 99, 0.50) 60.42%, rgba(95, 209, 102, 0.50) 78.65%, rgba(69, 172, 242, 0.50) 100%), #FFF;">
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+      Take advantage of the code <strong>VOUCHERCODE</strong> for 30% OFF.
+    </div>
+  </div>
+
   {% include "header.html" %}
     {{content | safe}}
   {% include "footer.html" %}
@@ -15,6 +21,31 @@
   <div class="fixed left-2 bottom-2 mr-2 rounded-xl text-center py-2 px-4 dark:bg-gray-100 dark:text-gray-900 bg-gray-800 text-white">
     Check my other pixel style icon set: <a class="underline hover:text-gray-700" href="https://www.pixelarticons.com">Pixelarticons</a>
   </div>
+
+  <!-- Light/Dark theme switcher script -->
+  <script>
+    document
+      .getElementById("switchTheme")
+      .addEventListener("click", function () {
+        let htmlClasses = document.querySelector("html").classList;
+        if (localStorage.theme == "dark") {
+          htmlClasses.remove("dark");
+          localStorage.removeItem("theme");
+        } else {
+          htmlClasses.add("dark");
+          localStorage.theme = "dark";
+        }
+      });
+    if (
+      localStorage.theme === "dark" ||
+      (!"theme" in localStorage &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.querySelector("html").classList.add("dark");
+    } else if (localStorage.theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    }
+  </script>
 
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
