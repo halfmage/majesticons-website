@@ -1,6 +1,5 @@
 const fg = require('fast-glob');
 const Image = require("@11ty/eleventy-img")
-const sharp = require("sharp")
 const now = String(Date.now())
 
 async function imageShortcode(src, alt, sizes = "100vw") {
@@ -19,8 +18,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
   return Image.generateHTML(metadata, imageAttributes);
 }
 
-// Run search for images in /gallery and /sponsors
-const iconImages = fg.sync(['**/icons-png/*', '!**/_site']);
+const version31 = fg.sync(['**/version-3-1/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
@@ -40,9 +38,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images")
   eleventyConfig.addPassthroughCopy("majesticons-v2-free.zip")
 
-  //Create collection of gallery images
-  eleventyConfig.addCollection('icons', function(collection) {
-    return iconImages;
+  eleventyConfig.addCollection('version31', function(collection) {
+      return version31;
   });
 
   return {
