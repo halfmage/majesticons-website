@@ -36,9 +36,5 @@ html {
 }
 
 .button {
-  @apply bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:brightness-125 px-5 py-3 font-semibold text-center rounded-lg transition-all inline-block; 
-}
-
-.button-outline {
-  @apply text-gray-900 dark:text-white border border-gray-400 dark:border-gray-700 hover:border-gray-950 hover:dark:border-gray-50 px-5 py-3 font-semibold text-center rounded-lg transition-colors inline-block ; 
+  @apply h-8 px-4 bg-gray-950 dark:bg-white text-white dark:text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
 }
