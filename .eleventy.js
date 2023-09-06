@@ -19,6 +19,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 const version31 = fg.sync(['**/version-3-1/*', '!**/_site']);
+const version32 = fg.sync(['**/version-3-2/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
@@ -40,6 +41,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection('version31', function(collection) {
       return version31;
+  });
+
+  eleventyConfig.addCollection('version32', function(collection) {
+      return version32;
   });
 
   return {
