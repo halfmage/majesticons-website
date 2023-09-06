@@ -1,5 +1,6 @@
 Majesticons 3.0 categories
 ==========================
+Ai
 Arrows
 Astronomy
 Bags
@@ -50,3 +51,4 @@ User
 Vehicles
 Video
 Views
+Web3
