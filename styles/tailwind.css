@@ -36,5 +36,9 @@ html {
 }
 
 .button {
-  @apply h-8 px-4 bg-gray-950 dark:bg-white text-white dark:text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
+  @apply h-8 px-4 bg-gray-950 border border-gray-950 dark:bg-white text-white dark:text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
+}
+
+.button-outline {
+  @apply h-8 px-4 border border-gray-950 dark:border-white dark:text-white text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
 }
