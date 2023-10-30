@@ -20,6 +20,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 
 const version31 = fg.sync(['**/version-3-1/*', '!**/_site']);
 const version32 = fg.sync(['**/version-3-2/*', '!**/_site']);
+const version33 = fg.sync(['**/version-3-3/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
@@ -39,13 +40,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images")
   eleventyConfig.addPassthroughCopy("majesticons-v2-free.zip")
 
-  eleventyConfig.addCollection('version31', function(collection) {
-      return version31;
-  });
-
-  eleventyConfig.addCollection('version32', function(collection) {
-      return version32;
-  });
+  eleventyConfig.addCollection('version31', function(collection) {return version31;});
+  eleventyConfig.addCollection('version32', function(collection) {return version32;});
+  eleventyConfig.addCollection('version33', function(collection) {return version33;});
 
   return {
     htmlTemplateEngine: "njk",
