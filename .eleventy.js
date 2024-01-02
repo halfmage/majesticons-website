@@ -23,6 +23,7 @@ const version32 = fg.sync(['**/version-3-2/*', '!**/_site']);
 const version33 = fg.sync(['**/version-3-3/*', '!**/_site']);
 const version331 = fg.sync(['**/version-3-3-1/*', '!**/_site']);
 const version34 = fg.sync(['**/version-3-4/*', '!**/_site']);
+const version341 = fg.sync(['**/version-3-4-1/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
@@ -47,6 +48,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection('version33', function(collection) {return version33;});
   eleventyConfig.addCollection('version331', function(collection) {return version331;});
   eleventyConfig.addCollection('version34', function(collection) {return version34;});
+  eleventyConfig.addCollection('version341', function(collection) {return version341;});
 
   return {
     htmlTemplateEngine: "njk",
