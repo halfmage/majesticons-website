@@ -1,0 +1,35 @@
+<script>
+    var iconDataSolidPng = {{ majesticonsSolidPng | safe }};
+    function loadIconDataSolidPng() {
+        return {
+            search: "",
+            iconDataSolidPng,
+            get filteredIcons() {
+                if (this.search === "") {
+                    return this.iconDataSolidPng;
+                }
+                return this.iconDataSolidPng.filter((item) => {
+                    return item.name
+                        .toLowerCase()
+                        .includes(this.search.toLowerCase());
+                });
+            },
+        };
+    }
+</script>
+
+<div class="max-w-7xl mx-auto p-4">
+    <div x-data="loadIconDataSolidPng()">
+        <input x-ref="searchField" x-model="search" x-on:keydown.window.prevent.slash="$refs.searchField.focus()" placeholder="Search through all icons for one style..." type="search" class="text-center block w-full border border-gray-300 rounded-2xl px-4 py-3 my-4" />
+        <div class="grid gap-4 grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12">
+            <template x-for="item in filteredIcons" :key="item">
+                <div class="col-span-1 text-center flex flex-col items-center justify-center">
+                    <div class="rounded-2xl bg-white shadow border border-gray-100 w-full aspect-square flex items-center justify-center">
+                        <img :src="item.filePath" alt="" class="mx-auto w-6 h-6 aspect-square flex-shrink-0" loading="lazy" />
+                    </div>
+                    <div class="text-[10px] w-full truncate text-center text-gray-600 mt-1" x-text="item.namePlain"></div>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
