@@ -11,6 +11,7 @@ Buildings
 Calendar
 Charts
 Clipboards
+Clothing
 Cloud
 Connectivity
 Currency
@@ -36,6 +37,7 @@ Medical
 Messaging
 Nature
 Notes
+Numeric
 Photography
 Scan
 Science

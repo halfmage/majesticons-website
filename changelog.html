@@ -3,20 +3,37 @@ title: Homepage
 layout: base
 ---
 
-<div class="py-16 md:py-24 border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-screen-xl mx-auto px-4">
-        <h2 class="text-3xl mb-12">Recent updates for Majesticons</h2>
+<div class="py-16 border-b border-gray-200 md:py-24 dark:border-gray-800">
+    <div class="max-w-screen-xl px-4 mx-auto">
+        <h2 class="mb-12 text-3xl">Recent updates for Majesticons</h2>
 
-        <div class="grid grid-cols-12 mb-12 pb-12 border-b border-gray-300 dark:border-gray-700">
-            <div class="col-span-12 md:col-span-3 mb-4 md:mb-0">
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
+                <div class="text-lg font-semibold">Version 3.5</div>
+                <div class="my-2 text-gray-400">452 new icons + fixes</div>
+                <div class="text-gray-400">New Year 2024 Update</div>
+            </div>
+            <div class="grid grid-cols-3 col-span-12 gap-2 md:grid-cols-4 md:col-span-9">
+                {% for image in collections.version35 %}
+                    <div class="flex items-center text-xs dark:text-white">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6 dark:invert" alt="">
+                        {% set imagenew = image | replace("images/version-3-5/","") %}
+                        {{ imagenew | replace(".png","") }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
                 <div class="text-lg font-semibold">Version 3.4.1</div>
-                <div class="text-gray-400 my-2">60 new icons</div>
+                <div class="my-2 text-gray-400">60 new icons</div>
                 <div class="text-gray-400">Dezember Update</div>
             </div>
-            <div class="col-span-12 md:col-span-9 flex items-center flex-wrap gap-2">
+            <div class="flex flex-wrap items-center col-span-12 gap-2 md:col-span-9">
                 {% for image in collections.version341 %}
-                    <div class="dark:text-gray-900 text-xs flex items-center py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-200">
-                        <img src="/{{image}}" class="w-4 md:w-6 h-4 md:h-6 mr-2" alt="">
+                    <div class="flex items-center px-3 py-1 text-xs rounded-lg dark:text-gray-900 bg-gray-50 dark:bg-gray-200">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6" alt="">
                         {% set imagenew = image | replace("images/version-3-4-1/","") %}
                         {{ imagenew | replace(".png","") }}
                     </div>
@@ -24,16 +41,16 @@ layout: base
             </div>
         </div>
 
-        <div class="grid grid-cols-12 mb-12 pb-12 border-b border-gray-300 dark:border-gray-700">
-            <div class="col-span-12 md:col-span-3 mb-4 md:mb-0">
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
                 <div class="text-lg font-semibold">Version 3.4</div>
-                <div class="text-gray-400 my-2">102 new icons</div>
+                <div class="my-2 text-gray-400">102 new icons</div>
                 <div class="text-gray-400">November Update</div>
             </div>
-            <div class="col-span-12 md:col-span-9 flex items-center flex-wrap gap-2">
+            <div class="flex flex-wrap items-center col-span-12 gap-2 md:col-span-9">
                 {% for image in collections.version34 %}
-                    <div class="dark:text-gray-900 text-xs flex items-center py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-200">
-                        <img src="/{{image}}" class="w-4 md:w-6 h-4 md:h-6 mr-2" alt="">
+                    <div class="flex items-center px-3 py-1 text-xs rounded-lg dark:text-gray-900 bg-gray-50 dark:bg-gray-200">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6" alt="">
                         {% set imagenew = image | replace("images/version-3-4/","") %}
                         {{ imagenew | replace(".png","") }}
                     </div>
@@ -41,16 +58,16 @@ layout: base
             </div>
         </div>
 
-        <div class="grid grid-cols-12 mb-12 pb-12 border-b border-gray-300 dark:border-gray-700">
-            <div class="col-span-12 md:col-span-3 mb-4 md:mb-0">
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
                 <div class="text-lg font-semibold">Version 3.3.1</div>
-                <div class="text-gray-400 my-2">18 new icons</div>
+                <div class="my-2 text-gray-400">18 new icons</div>
                 <div class="text-gray-400">Icon requests</div>
             </div>
-            <div class="col-span-12 md:col-span-9 flex items-center flex-wrap gap-2">
+            <div class="flex flex-wrap items-center col-span-12 gap-2 md:col-span-9">
                 {% for image in collections.version331 %}
-                    <div class="dark:text-gray-900 text-xs flex items-center py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-200">
-                        <img src="/{{image}}" class="w-4 md:w-6 h-4 md:h-6 mr-2" alt="">
+                    <div class="flex items-center px-3 py-1 text-xs rounded-lg dark:text-gray-900 bg-gray-50 dark:bg-gray-200">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6" alt="">
                         {% set imagenew = image | replace("images/version-3-3-1/","") %}
                         {{ imagenew | replace(".png","") }}
                     </div>
@@ -58,16 +75,16 @@ layout: base
             </div>
         </div>
 
-        <div class="grid grid-cols-12 mb-12 pb-12 border-b border-gray-300 dark:border-gray-700">
-            <div class="col-span-12 md:col-span-3 mb-4 md:mb-0">
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
                 <div class="text-lg font-semibold">Version 3.3</div>
-                <div class="text-gray-400 my-2">90 new icons</div>
+                <div class="my-2 text-gray-400">90 new icons</div>
                 <div class="text-gray-400">October 2023</div>
             </div>
-            <div class="col-span-12 md:col-span-9 flex items-center flex-wrap gap-2">
+            <div class="flex flex-wrap items-center col-span-12 gap-2 md:col-span-9">
                 {% for image in collections.version33 %}
-                    <div class="dark:text-gray-900 text-xs flex items-center py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-200">
-                        <img src="/{{image}}" class="w-4 md:w-6 h-4 md:h-6 mr-2" alt="">
+                    <div class="flex items-center px-3 py-1 text-xs rounded-lg dark:text-gray-900 bg-gray-50 dark:bg-gray-200">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6" alt="">
                         {% set imagenew = image | replace("images/version-3-3/","") %}
                         {{ imagenew | replace(".png","") }}
                     </div>
@@ -75,16 +92,16 @@ layout: base
             </div>
         </div>
 
-        <div class="grid grid-cols-12 mb-12 pb-12 border-b border-gray-300 dark:border-gray-700">
-            <div class="col-span-12 md:col-span-3 mb-4 md:mb-0">
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
                 <div class="text-lg font-semibold">Version 3.2</div>
-                <div class="text-gray-400 my-2">100 new icons</div>
+                <div class="my-2 text-gray-400">100 new icons</div>
                 <div class="text-gray-400">September 2023</div>
             </div>
-            <div class="col-span-12 md:col-span-9 flex items-center flex-wrap gap-2">
+            <div class="flex flex-wrap items-center col-span-12 gap-2 md:col-span-9">
                 {% for image in collections.version32 %}
-                    <div class="dark:text-gray-900 text-xs flex items-center py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-200">
-                        <img src="/{{image}}" class="w-4 md:w-6 h-4 md:h-6 mr-2" alt="">
+                    <div class="flex items-center px-3 py-1 text-xs rounded-lg dark:text-gray-900 bg-gray-50 dark:bg-gray-200">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6" alt="">
                         {% set imagenew = image | replace("images/version-3-2/","") %}
                         {{ imagenew | replace(".png","") }}
                     </div>
@@ -92,16 +109,16 @@ layout: base
             </div>
         </div>
 
-        <div class="grid grid-cols-12 mb-12 pb-12 border-b border-gray-300 dark:border-gray-700">
-            <div class="col-span-12 md:col-span-3 mb-4 md:mb-0">
+        <div class="grid grid-cols-12 pb-12 mb-12 border-b border-gray-300 dark:border-gray-700">
+            <div class="col-span-12 mb-4 md:col-span-3 md:mb-0">
                 <div class="text-lg font-semibold">Version 3.1</div>
-                <div class="text-gray-400 my-2">62 new icons</div>
+                <div class="my-2 text-gray-400">62 new icons</div>
                 <div class="text-gray-400">August 2023</div>
             </div>
-            <div class="col-span-12 md:col-span-9 flex items-center flex-wrap gap-2">
+            <div class="flex flex-wrap items-center col-span-12 gap-2 md:col-span-9">
                 {% for image in collections.version31 %}
-                    <div class="dark:text-gray-900 text-xs flex items-center py-1 px-3 rounded-lg bg-gray-50 dark:bg-gray-200">
-                        <img src="/{{image}}" class="w-4 md:w-6 h-4 md:h-6 mr-2" alt="">
+                    <div class="flex items-center px-3 py-1 text-xs rounded-lg dark:text-gray-900 bg-gray-50 dark:bg-gray-200">
+                        <img src="/{{image}}" class="w-4 h-4 mr-2 md:w-6 md:h-6" alt="">
                         {% set imagenew = image | replace("images/version-3-1/","") %}
                         {{ imagenew | replace(".png","") }}
                     </div>
