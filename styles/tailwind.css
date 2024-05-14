@@ -2,43 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-display: swap;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/plus-jakarta-sans-v8-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/plus-jakarta-sans-v8-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/plus-jakarta-sans-v8-latin-700.woff2') format('woff2');
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-@keyframes animation-pattern {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-.animation-pattern {
-  animation: animation-pattern 200s linear infinite;
-}
-
-.bg-iconpattern {
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .bg-iconpattern {
-    background-size: cover;
-  }
-  .animation-pattern {
-    animation: animation-pattern 120s linear infinite;
-  }
-}
-
 .button {
-  @apply h-8 px-4 bg-gray-950 border border-gray-950 dark:bg-white text-white dark:text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
+  @apply py-2 px-4 bg-[#FBFF1C] text-black hover:opacity-80 font-medium inline-flex gap-1 items-center rounded-full; 
 }
 
 .button-outline {
-  @apply h-8 px-4 border border-gray-950 dark:border-white dark:text-white text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
+  @apply py-2 px-4 bg-white/40 dark:bg-black/40 border border-gray-300 dark:border-gray-700 text-black dark:text-white hover:opacity-80 font-medium inline-flex gap-1 items-center rounded-full; 
 }

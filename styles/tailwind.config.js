@@ -8,10 +8,13 @@ module.exports = {
       colors: {
         white: '#fff',
         black: '#000',
-        gray: colors.slate,
+        gray: colors.zinc,
         amber: colors.amber,
         orange: colors.orange,
         blue: colors.blue,
+      },
+      fontFamily: {
+        'primary': ['Plus Jakarta Sans, system-ui, sans-serif'],
       },
     }
   },

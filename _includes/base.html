@@ -5,11 +5,13 @@
   <link rel="stylesheet" href="/style.css?v={% version %}" />
   <script src="/js/alpine.js?v={% version %}"></script>
 </head>
-<body class="antialiased bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-200 text-sm">
+<body class="font-[#FBFF1C] bg-gray-100 text-gray-950 dark:bg-gray-950 dark:text-white">
 
-  {% include "header.html" %}
-    {{content | safe}}
-  {% include "footer.html" %}
+  <div style="background-image:url(/images/bg.svg);background-position: 100% 0;background-repeat: no-repeat;background-size: contain;">
+    {% include "header.html" %}
+      {{content | safe}}
+    {% include "footer.html" %}
+  </div>
 
   <!-- Pixelarticons teaser -->
   <div class="fixed left-2 bottom-2 mr-2 rounded-xl text-center py-2 px-4 dark:bg-gray-100 dark:text-gray-900 bg-gray-800 text-white">
