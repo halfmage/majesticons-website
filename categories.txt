@@ -44,7 +44,7 @@ Science
 Security
 Shopping
 Tables
-Telecommunication
+Telecom
 Textboxes
 Tickets
 Time

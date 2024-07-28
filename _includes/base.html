@@ -5,9 +5,9 @@
   <link rel="stylesheet" href="/style.css?v={% version %}" />
   <script src="/js/alpine.js?v={% version %}"></script>
 </head>
-<body class="font-[#FBFF1C] bg-gray-100 text-gray-950 dark:bg-gray-950 dark:text-white">
+<body class="bg-white text-gray-900">
 
-  <div style="background-image:url(/images/bg.svg);background-position: 100% 0;background-repeat: no-repeat;background-size: contain;">
+  <div>
     {% include "header.html" %}
       {{content | safe}}
     {% include "footer.html" %}

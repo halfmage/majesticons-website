@@ -1,7 +1,14 @@
 {
-  "title": "Majesticons | 7,300+ UI Icons",
-  "description": "Save time and effort by selecting a clean, consistent and neutral icon set with more than 7,300+ icons and crafted specifically for modern websites, SaaS platforms, and professional UI/UX projects.",
+  "title": "Majesticons — Simply elegant icons",
+  "description": "Save time, effort and money by selecting a clean, consistent and top-notch icon set.",
   "url": "https://www.majesticons.com",
   "locale": "en",
-  "totalIcons": "7,300+"
+  "icons": "11,000+",
+  "categories": "54",
+
+  "gumroad": "https://halfmage.gumroad.com/l/majesticons",
+  "gumroad-solo": "https://halfmage.gumroad.com/l/majesticons?option=JET8um0k162dz0hXRocjsA%3D%3D",
+  "gumroad-teams": "https://halfmage.gumroad.com/l/majesticons?option=q-nO6xpHHd0eYPWygGYdWQ%3D%3D",
+  "gumroad-summersale": "https://halfmage.gumroad.com/l/majesticons/5oq3lxx",
+  "github": "https://github.com/halfmage/majesticons"
 }
