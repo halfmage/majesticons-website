@@ -44,6 +44,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("icons")
   eleventyConfig.addPassthroughCopy("fonts")
   eleventyConfig.addPassthroughCopy("images")
+  eleventyConfig.addPassthroughCopy({ 'images/favicon.png': './favicon.png' })
   eleventyConfig.addPassthroughCopy("majesticons-v2-free.zip")
 
   eleventyConfig.addCollection('version31', function(collection) {return version31;});
