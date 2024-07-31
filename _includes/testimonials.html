@@ -1,0 +1,23 @@
+
+
+
+<div class="bg-gray-100 py-16 md:py-24" id="benefits">
+<div class="wrapper">
+    <div class="mb-8 text-3xl sm:text-5xl font-extrabold tracking-tight">Opinions from Industry-Leading Designers</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
+        {% for x in settings.testimonials %}
+        <div class="bg-white rounded-xl shadow p-6 flex flex-col justify-between">
+            <p class="mb-6">{{x.text}}</p>
+            <div class="flex w-full items-center justify-between">
+                <div class="w-auto h-6">
+                    {% image x.avatar, x.name, "50vw" %}
+                </div>
+                <a class="text-gray-400 text-sm hover:underline" href="{{x.link}}" target="_blank" rel="noopener noreferrer">
+                    {{x.name}}
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>

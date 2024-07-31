@@ -2,43 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.wrapper {
+  @apply max-w-screen-xl mx-auto px-4
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-@keyframes animation-pattern {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-.animation-pattern {
-  animation: animation-pattern 200s linear infinite;
-}
-
-.bg-iconpattern {
-  background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .bg-iconpattern {
-    background-size: cover;
-  }
-  .animation-pattern {
-    animation: animation-pattern 120s linear infinite;
-  }
-}
-
-.button {
-  @apply h-8 px-4 bg-gray-950 border border-gray-950 dark:bg-white text-white dark:text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
-}
-
-.button-outline {
-  @apply h-8 px-4 border border-gray-950 dark:border-white dark:text-white text-gray-950 hover:opacity-80 font-semibold inline-flex items-center text-center rounded-full text-sm; 
+picture, picture img {
+  @apply w-full h-full object-cover inline-block !important;
 }

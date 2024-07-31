@@ -28,8 +28,10 @@ const version35 = fg.sync(['**/version-3-5/*', '!**/_site']);
 
 //Create collections so you can access the data in your templates
 module.exports = function(eleventyConfig) {
-
+  eleventyConfig.addWatchTarget('./styles/tailwind.config.js')
+  eleventyConfig.addWatchTarget('./styles/tailwind.css')
   eleventyConfig.addWatchTarget('./_tmp/style.css')
+
   eleventyConfig.addPassthroughCopy({ './_tmp/style.css': './style.css' })
   eleventyConfig.addPassthroughCopy({ './node_modules/alpinejs/dist/alpine.js': './js/alpine.js' })
 
@@ -42,6 +44,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("icons")
   eleventyConfig.addPassthroughCopy("fonts")
   eleventyConfig.addPassthroughCopy("images")
+  eleventyConfig.addPassthroughCopy({ 'images/favicon.png': './favicon.png' })
   eleventyConfig.addPassthroughCopy("majesticons-v2-free.zip")
 
   eleventyConfig.addCollection('version31', function(collection) {return version31;});

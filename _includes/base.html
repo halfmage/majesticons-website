@@ -5,41 +5,19 @@
   <link rel="stylesheet" href="/style.css?v={% version %}" />
   <script src="/js/alpine.js?v={% version %}"></script>
 </head>
-<body class="antialiased bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-200 text-sm">
+<body class="bg-white text-gray-800">
 
-  {% include "header.html" %}
-    {{content | safe}}
-  {% include "footer.html" %}
-
-  <!-- Pixelarticons teaser -->
-  <div class="fixed left-2 bottom-2 mr-2 rounded-xl text-center py-2 px-4 dark:bg-gray-100 dark:text-gray-900 bg-gray-800 text-white">
-    Check my other pixel style icon set: <a class="underline hover:text-gray-700" href="https://www.pixelarticons.com">Pixelarticons</a>
+  <div>
+    {% include "header.html" %}
+      {{content | safe}}
+    {% include "footer.html" %}
   </div>
 
-  <!-- Light/Dark theme switcher script -->
-  <script>
-    document
-      .getElementById("switchTheme")
-      .addEventListener("click", function () {
-        let htmlClasses = document.querySelector("html").classList;
-        if (localStorage.theme == "dark") {
-          htmlClasses.remove("dark");
-          localStorage.removeItem("theme");
-        } else {
-          htmlClasses.add("dark");
-          localStorage.theme = "dark";
-        }
-      });
-    if (
-      localStorage.theme === "dark" ||
-      (!"theme" in localStorage &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.querySelector("html").classList.add("dark");
-    } else if (localStorage.theme === "dark") {
-      document.querySelector("html").classList.add("dark");
-    }
-  </script>
+  <!-- Pixelarticons teaser -->
+  <a href="https://www.pixelarticons.com" target="_blank" class="fixed left-2 bottom-2 mr-2 flex items-center gap-2 text-sm/4 p-3 bg-gray-950/50 backdrop-blur-lg text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" class="size-8 flex-shrink-0" fill="none" viewBox="0 0 32 32"><path fill="currentColor" fill-rule="evenodd" d="M32 0H0v32h32V0ZM10 22v-4h8v4h-4v4h4v-4h4v4h4v-4h-4v-4h4v-4h-4v4h-4V6H6v16h4Zm0-8h4v-4h-4v4Z" clip-rule="evenodd"></path></svg>
+    More into pixels? Check my other pixel style icon set Pixelarticons
+  </a>
   
   <script async defer src="https://api.majesticons.com/latest.js"></script>
   <noscript><img src="https://api.majesticons.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>

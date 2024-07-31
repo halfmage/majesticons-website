@@ -1,7 +1,39 @@
 {
-  "title": "Majesticons | 7,300+ UI Icons",
-  "description": "Save time and effort by selecting a clean, consistent and neutral icon set with more than 7,300+ icons and crafted specifically for modern websites, SaaS platforms, and professional UI/UX projects.",
+  "title": "Majesticons — Beautiful icons make stunning designs",
+  "description": "Save time, effort and money by selecting a clean, consistent and top-notch icon set.",
   "url": "https://www.majesticons.com",
   "locale": "en",
-  "totalIcons": "7,300+"
+  "icons": "11,000+",
+  "categories": "54",
+
+  "preview-line": "/images/majesticons-v3-preview-line.jpg",
+  "preview-solid": "/images/majesticons-v3-preview-solid.jpg",
+
+  "gumroad": "https://halfmage.gumroad.com/l/majesticons",
+  "gumroad_solo": "https://halfmage.gumroad.com/l/majesticons?option=JET8um0k162dz0hXRocjsA%3D%3D",
+  "gumroad_teams": "https://halfmage.gumroad.com/l/majesticons?option=q-nO6xpHHd0eYPWygGYdWQ%3D%3D",
+  "gumroad_membership": "https://halfmage.gumroad.com/l/majesticons-membership",
+  "gumroad_summersale": "https://halfmage.gumroad.com/l/majesticons/5oq3lxx",
+  "github": "https://github.com/halfmage/majesticons",
+
+  "testimonials": [
+    {
+      "name": "Untitled UI",
+      "text": "We love this icon set for a few reasons. They're super minimal and consistent which means they'll work well across any type of web design or UI design project. Clearly crafted with care by a professional and easy to customize right in Figma!",
+      "link": "https://www.untitledui.com/blog/free-icon-sets#3-majesticons",
+      "avatar": "logo-untitled.png"
+    },
+    {
+      "name": "Designer.tips",
+      "text": "Majesticons is a great tool for designers that are looking for an easy way to create visuals. It comes with high quality templates, icons and illustrations in different formats.",
+      "link": "https://www.designer.tips/tools/majesticons",
+      "avatar": "logo-designertips.png"
+    },
+    {
+      "name": "Hugeicons",
+      "text": "Majesticons was crafted to offer both premium and open-source communities with meticulously designed high quality icons.",
+      "link": "https://hugeicons.com/blog/development/best-open-source-icon-libraries#19-majesticons",
+      "avatar": "logo-hugeicons.png"
+    }
+  ]
 }
