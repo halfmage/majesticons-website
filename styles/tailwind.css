@@ -9,3 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+picture, picture img {
+  @apply w-full h-full object-cover inline-block !important;
+}
