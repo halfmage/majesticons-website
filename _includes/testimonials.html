@@ -7,10 +7,12 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
         {% for x in settings.testimonials %}
         <div class="bg-white rounded-xl shadow p-6 flex flex-col justify-between">
-            <p class="mb-4">{{x.text}}</p>
-            <div class="flex w-full items-baseline justify-between">
-                <img class="w-auto" src="{{x.avatar}}" alt="{{x.name}} logo">
-                <p class="text-gray-400">{{x.name}}</p>
+            <p class="mb-6">{{x.text}}</p>
+            <div class="flex w-full items-center justify-between">
+                <img class="w-auto h-6" src="{{x.avatar}}" alt="{{x.name}} logo">
+                <a class="text-gray-400 text-sm hover:underline" href="{{x.link}}" target="_blank" rel="noopener noreferrer">
+                    {{x.name}}
+                </a>
             </div>
         </div>
         {% endfor %}

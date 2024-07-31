@@ -10,29 +10,30 @@
   "preview-solid": "/images/majesticons-v3-preview-solid.jpg",
 
   "gumroad": "https://halfmage.gumroad.com/l/majesticons",
-  "gumroad-solo": "https://halfmage.gumroad.com/l/majesticons?option=JET8um0k162dz0hXRocjsA%3D%3D",
-  "gumroad-teams": "https://halfmage.gumroad.com/l/majesticons?option=q-nO6xpHHd0eYPWygGYdWQ%3D%3D",
-  "gumroad-summersale": "https://halfmage.gumroad.com/l/majesticons/5oq3lxx",
+  "gumroad_solo": "https://halfmage.gumroad.com/l/majesticons?option=JET8um0k162dz0hXRocjsA%3D%3D",
+  "gumroad_teams": "https://halfmage.gumroad.com/l/majesticons?option=q-nO6xpHHd0eYPWygGYdWQ%3D%3D",
+  "gumroad_membership": "https://halfmage.gumroad.com/l/majesticons-membership",
+  "gumroad_summersale": "https://halfmage.gumroad.com/l/majesticons/5oq3lxx",
   "github": "https://github.com/halfmage/majesticons",
 
   "testimonials": [
     {
       "name": "Untitled UI",
-      "text": "We love this icon set for a few reasons. Firstly, they're super minimal and consistent which means they'll work well across any type of web design or UI design project. Secondly, they're clearly crafted with care by a professional and are easy to customize right in Figma!",
+      "text": "We love this icon set for a few reasons. They're super minimal and consistent which means they'll work well across any type of web design or UI design project. Clearly crafted with care by a professional and easy to customize right in Figma!",
       "link": "https://www.untitledui.com/blog/free-icon-sets#3-majesticons",
       "avatar": "/images/logo-untitled.png"
+    },
+    {
+      "name": "Designer.tips",
+      "text": "Majesticons is a great tool for designers that are looking for an easy way to create visuals. It comes with high quality templates, icons and illustrations in different formats.",
+      "link": "https://www.designer.tips/tools/majesticons",
+      "avatar": "/images/logo-designertips.png"
     },
     {
       "name": "Hugeicons",
       "text": "Majesticons was crafted to offer both premium and open-source communities with meticulously designed high quality icons.",
       "link": "https://hugeicons.com/blog/development/best-open-source-icon-libraries#19-majesticons",
       "avatar": "/images/logo-hugeicons.png"
-    },
-    {
-      "name": "Designer.tips",
-      "text": "Majesticons is a great tool for designers that are looking for an easy way to create visuals. It comes with high quality templates, icons and illustrations in different formats. It offers customizable graphics that helps reinforce a brand's identity",
-      "link": "https://www.designer.tips/tools/majesticons",
-      "avatar": "/images/logo-designertips.png"
     }
   ]
 }
