@@ -4,8 +4,24 @@
   {% include "meta.html" %}
   <link rel="stylesheet" href="/style.css?v={% version %}" />
   <script src="/js/alpine.js?v={% version %}"></script>
+  <script>
+    // Dark mode system - runs before page renders to avoid FOUC
+    // Default to 'system' theme which follows OS preference
+    if (localStorage.theme === 'dark' || 
+        (localStorage.theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches) ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    
+    // Set default theme to 'system' if not already set
+    if (!('theme' in localStorage)) {
+      localStorage.theme = 'system'
+    }
+  </script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
 
   <div>
     {% include "header.html" %}
@@ -19,6 +35,75 @@
     More into pixels? Check my other pixel style icon set Pixelarticons
   </a>
   
+  <script>
+    // Theme toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const lightIcon = document.getElementById('theme-toggle-light-icon');
+      const darkIcon = document.getElementById('theme-toggle-dark-icon');
+      const systemIcon = document.getElementById('theme-toggle-system-icon');
+      
+      // Update icon visibility based on current theme
+      function updateThemeIcon() {
+        const currentTheme = localStorage.theme || 'system';
+        
+        // Hide all icons first
+        if (lightIcon) lightIcon.classList.add('hidden');
+        if (darkIcon) darkIcon.classList.add('hidden');
+        if (systemIcon) systemIcon.classList.add('hidden');
+        
+        // Show appropriate icon
+        if (currentTheme === 'light') {
+          if (lightIcon) lightIcon.classList.remove('hidden');
+        } else if (currentTheme === 'dark') {
+          if (darkIcon) darkIcon.classList.remove('hidden');
+        } else {
+          if (systemIcon) systemIcon.classList.remove('hidden');
+        }
+      }
+      
+      // Set initial icon
+      updateThemeIcon();
+      
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+          // Cycle through: light → dark → system
+          const currentTheme = localStorage.theme || 'system';
+          
+          if (currentTheme === 'light') {
+            localStorage.theme = 'dark';
+            document.documentElement.classList.add('dark');
+          } else if (currentTheme === 'dark') {
+            localStorage.theme = 'system';
+            // Apply system preference
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          } else { // system
+            localStorage.theme = 'light';
+            document.documentElement.classList.remove('dark');
+          }
+          
+          // Update icon after theme change
+          updateThemeIcon();
+        });
+      }
+      
+      // Listen for system theme changes when in system mode
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (localStorage.theme === 'system') {
+          if (e.matches) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+      });
+    });
+  </script>
+
   <script async defer src="https://api.majesticons.com/latest.js"></script>
   <noscript><img src="https://api.majesticons.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 

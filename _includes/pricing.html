@@ -1,105 +1,217 @@
-<div class="py-16 md:py-24" id="pricing">
+<div class="py-12 md:py-20" id="pricing">
     <div class="wrapper">
   
-    <div class="text-4xl tracking-tight font-extrabold sm:text-5xl">Simple and straightforward <br> pricing without hidden costs</div>
-    <p class="mt-4 text-lg">The little details you need to make your design look better</p>
+    <div class="text-3xl md:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-gray-100">Simple and straightforward <br> pricing without hidden costs</div>
+    <p class="mt-3 text-base md:text-lg text-gray-600 dark:text-gray-400">The little details you need to make your design look better</p>
   
-    <div class="grid grid-cols-12 gap-6 xl:gap-8 mt-12">
+    <!-- New Webapp Tiers -->
+    <div class="mt-8 md:mt-12 mb-12 md:mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 dark:*:bg-gray-800">
   
-      <div class="col-span-12 md:col-span-4 border border-gray-200 rounded-xl shadow overflow-hidden">
-        <div class="bg-gray-800 text-white p-3 text-center font-medium">
-          Solo — 1 user
-        </div>
-        <div class="py-8 px-6 bg-white text-center">
-          <svg class="size-12 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" vector-effect="non-scaling-stroke"/></svg>
-          <div class="flex items-center justify-center gap-2">
-            <div class="text-3xl sm:text-4xl font-extrabold tracking-tight">$ 99</div>
-            <div class="text-gray-600 font-medium">/ one-time</div>
+        <div class="border border-gray-200 dark:border-gray-700 rounded-xl shadow dark:shadow-gray-900/10 overflow-hidden">
+          <div class="bg-gray-800 dark:bg-gray-900 text-white px-2 py-4 text-center font-medium text-sm">
+            Solo — 1 user
           </div>
-          <div class="text-gray-600 mt-2 mb-4">You pay once, access forever</div>
-          <a class="bg-gray-800 hover:bg-gray-700 py-3 px-6 inline-block w-full text-white rounded-full font-medium transition-all" target="_blank" href="{{settings.gumroad_solo}}">Buy Solo license</a>
-        </div>
-        <div class="p-6 border-t border-gray-200">
-          <ul class="flex flex-col gap-2">
-            <li><span class="mr-2 text-gray-700">✓</span>License for <strong>1 user</strong></li>
-            <li><span class="mr-2 text-gray-700">✓</span>{{settings.icons}} icons</li>
-            <li><span class="mr-2 text-gray-700">✓</span>New icons monthly</li>
-            <li><span class="mr-2 text-gray-700">✓</span>3x styles</li>
-            <li><span class="mr-2 text-gray-700">✓</span>{{settings.categories}} categories</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Figma file</li>
-            <li><span class="mr-2 text-gray-700">✓</span>IconJar file</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Exported SVG files</li>
-            <li><span class="mr-2 text-gray-700">✓</span>License key</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Unlimited projects</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Lifetime access</li>
-          </ul>
-        </div>
-      </div>
-  
-      <div class="col-span-12 md:col-span-4 border border-gray-200 rounded-xl shadow overflow-hidden">
-        <div class="bg-gray-800 text-white p-3 text-center font-medium">
-          Team — Unlimited user
-        </div>
-        <div class="py-8 px-6 bg-white text-center">
-          <svg class="size-12 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 10.8a3 3 0 0 0 0-5.6m5 5.6a3 3 0 0 0 0-5.6M2 19v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2m5 0v-2a3 3 0 0 0-3-3m8 5v-2a3 3 0 0 0-3-3m-9-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" vector-effect="non-scaling-stroke"/></svg>
-          <div class="flex items-center justify-center gap-2">
-            <div class="text-3xl sm:text-4xl font-extrabold tracking-tight">$ 299</div>
-            <div class="text-gray-600 font-medium">/ one-time</div>
+          <div class="py-6 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-10 mx-auto mb-3 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" vector-effect="non-scaling-stroke"/></svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">€ 149</div>
+              <div class="text-gray-600 dark:text-gray-400 font-medium text-sm">/ one-time</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-2 mb-4 text-sm">You pay once, access forever</div>
+            <a class="bg-gray-800 dark:bg-gray-600 hover:bg-gray-700 dark:hover:bg-gray-50 dark:text-white dark:hover:text-gray-950 py-2.5 px-4 inline-block w-full text-white rounded-full font-medium transition-all text-sm" href="#" ">Get Solo Access</a>
           </div>
-          <div class="text-gray-600 mt-2 mb-4">You pay once, access forever</div>
-          <a class="bg-gray-800 hover:bg-gray-700 py-3 px-6 inline-block w-full text-white rounded-full font-medium transition-all" target="_blank" href="{{settings.gumroad_teams}}">Buy Team license</a>
+          <div class="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <ul class="flex flex-col gap-1.5 text-sm">
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">License for <strong>1 user</strong></span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Complete icon set (11,000+ icons)</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">3 styles: Line, Duotone, Solid</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">SVG download & copy</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Figma file download</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Web app access</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Lifetime updates</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Unlimited projects</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="p-6 border-t border-gray-200">
-          <ul class="flex flex-col gap-2">
-            <li><span class="mr-2 text-gray-700">✓</span>License for <strong>unlimited users</strong></li>
-            <li><span class="mr-2 text-gray-700">✓</span>{{settings.icons}} icons</li>
-            <li><span class="mr-2 text-gray-700">✓</span>New icons monthly</li>
-            <li><span class="mr-2 text-gray-700">✓</span>3x styles</li>
-            <li><span class="mr-2 text-gray-700">✓</span>{{settings.categories}} categories</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Figma file</li>
-            <li><span class="mr-2 text-gray-700">✓</span>IconJar file</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Exported SVG files</li>
-            <li><span class="mr-2 text-gray-700">✓</span>License key</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Unlimited projects</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Lifetime access</li>
-          </ul>
+  
+        <div class="border border-gray-200 dark:border-gray-700 rounded-xl shadow dark:shadow-gray-900/10 overflow-hidden">
+          <div class="bg-gray-800 dark:bg-gray-900 text-white px-2 py-4 text-center font-medium text-sm">
+            Team — 5 users
+          </div>
+          <div class="py-6 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-10 mx-auto mb-3 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 10.8a3 3 0 0 0 0-5.6m5 5.6a3 3 0 0 0 0-5.6M2 19v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2m5 0v-2a3 3 0 0 0-3-3m8 5v-2a3 3 0 0 0-3-3m-9-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" vector-effect="non-scaling-stroke"/></svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">€ 299</div>
+              <div class="text-gray-600 dark:text-gray-400 font-medium text-sm">/ one-time</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-2 mb-4 text-sm">You pay once, access forever</div>
+            <a class="bg-gray-800 dark:bg-gray-600 hover:bg-gray-700 dark:hover:bg-gray-50 dark:text-white dark:hover:text-gray-950 py-2.5 px-4 inline-block w-full text-white rounded-full font-medium transition-all text-sm" href="#" ">Get Team Access</a>
+          </div>
+          <div class="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <ul class="flex flex-col gap-1.5 text-sm">
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">License for <strong>5 users</strong></span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Complete icon set (11,000+ icons)</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">3 styles: Line, Duotone, Solid</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">SVG download & copy</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Figma file download</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Web app access</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Team member invitations</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Lifetime updates</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Unlimited projects</span></li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="col-span-12 md:col-span-4 border border-violet-200 rounded-xl shadow overflow-hidden">
-        <div class="bg-gradient-to-r from-violet-600 to-purple-900 text-white p-3 text-center font-medium">
-          Subscription
-        </div>
-        <div class="py-8 px-6 bg-white text-center">
-          <div class="flex items-center justify-center gap-2 mb-4">
-          <svg class="size-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 10.8a3 3 0 0 0 0-5.6m5 5.6a3 3 0 0 0 0-5.6M2 19v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2m5 0v-2a3 3 0 0 0-3-3m8 5v-2a3 3 0 0 0-3-3m-9-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" vector-effect="non-scaling-stroke"/></svg>
-          <span class="font-bold">+</span>
-          <svg class="size-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 9v10c0 1.1.9 2 2 2h6M4 9V7c0-1.1.9-2 2-2h2M4 9h16m0 0V7a2 2 0 0 0-2-2h-2m4 4v2m-4-6V3m0 2H8m0 0V3m9 12v2l-2-2 2-2v2Zm0 0h1c1 0 3 .6 3 3s-2 3-3 3c-.5 0-1.4-.2-2-.7" vector-effect="non-scaling-stroke"/></svg>
+        <div class="border border-purple-200 dark:border-purple-600 rounded-xl shadow dark:shadow-gray-900/10 relative">
+          <div class="absolute -top-4 -rotate-2 left-1/2 transform -translate-x-1/2 bg-gray-950 dark:bg-gray-100 text-white dark:text-gray-900 px-3 py-1 rounded-full text-sm font-medium">
+            Most Popular
           </div>
-          <div class="flex items-center justify-center gap-2">
-            <div class="text-3xl sm:text-4xl font-extrabold tracking-tight">$ 999</div>
-            <div class="text-gray-600 font-medium">/ monthly</div>
+          <div class="bg-gradient-to-r from-purple-600 via-yellow-600 to-cyan-600 text-white px-2 py-4 text-center font-medium rounded-t-xl text-sm">
+            Enterprise — 12 users
           </div>
-          <div class="text-gray-600 mt-2 mb-4">Get everything + custom icons</div>
-          <a class="border border-gray-800 text-gray-800 py-3 px-6 inline-block w-full hover:bg-gray-100 rounded-full font-medium transition-all" target="_blank" href="{{settings.gumroad_membership}}">Subscribe now</a>
+          <div class="py-6 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-10 mx-auto mb-3 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5m-4 0h4" vector-effect="non-scaling-stroke"/></svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">€ 499</div>
+              <div class="text-gray-600 dark:text-gray-400 font-medium text-sm">/ one-time</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-2 mb-4 text-sm">You pay once, access forever</div>
+            
+            <!-- Glowing Button like Hero -->
+            <div class="relative w-full">
+              <!-- Glowing Gradient Aura -->
+              <div class="absolute -inset-1">
+                <div class="w-full h-full animate-pulse blur-lg rounded-full bg-gradient-to-r from-purple-600 via-yellow-600 to-cyan-600 opacity-75"></div>
+              </div>
+              
+              <!-- Core Button -->
+              <a href="#" class="relative z-10 inline-flex items-center justify-center py-2.5 px-4 text-sm font-semibold text-white bg-gray-900 dark:bg-white dark:text-gray-950 rounded-full transition-all border-2 border-transparent hover:bg-gray-800 dark:hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-800 focus:ring-purple-600 shadow-lg hover:shadow-xl w-full">
+                Get Enterprise Access
+              </a>
+            </div>
+          </div>
+          <div class="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <ul class="flex flex-col gap-1.5 text-sm">
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">License for <strong>12 users</strong></span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100"><strong>Priority Request Icons</strong></span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Complete icon set (11,000+ icons)</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">3 styles: Line, Duotone, Solid</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">SVG download & copy</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Figma file download</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Web app access</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Team member invitations</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Priority support</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Lifetime updates</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Unlimited projects</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="p-6 bg-violet-50 border-y border-violet-200">
-          <li class="flex  text-violet-800 font-medium"><span class="mr-2">♡</span>Get as as many custom icons as you need for your startup or company and simply pay a fixed monthly price.</li>
-        </div>
-        <div class="p-6">
-          <ul class="flex flex-col gap-2">
-            <li><span class="mr-2 text-gray-700">✓</span>License for <strong>unlimited users</strong></li>
-            <li><span class="mr-2 text-gray-700">✓</span>{{settings.icons}} icons</li>
-            <li><span class="mr-2 text-gray-700">✓</span>New icons monthly</li>
-            <li><span class="mr-2 text-gray-700">✓</span>3x styles</li>
-            <li><span class="mr-2 text-gray-700">✓</span>{{settings.categories}} categories</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Figma file</li>
-            <li><span class="mr-2 text-gray-700">✓</span>IconJar file</li>
-            <li><span class="mr-2 text-gray-700">✓</span>Exported SVG files</li>
-          </ul>
-        </div>
-      </div>
 
+        <div class="border border-gray-200 dark:border-gray-700 rounded-xl shadow dark:shadow-gray-900/10 overflow-hidden">
+          <div class="bg-gray-800 dark:bg-gray-900 text-white px-2 py-4 text-center font-medium text-sm">
+            Unlimited — 12+ users
+          </div>
+          <div class="py-6 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-10 mx-auto mb-3 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12c-6.4 0-8 5.33-8 8 0-6.4-5.33-8-8-8 6.4 0 8-5.33 8-8 0 6.4 5.33 8 8 8ZM7 4C4.6 4 4 6 4 7c0-1-.6-3-3-3 1 0 3-.6 3-3 0 2.4 2 3 3 3ZM22 19.5c-2 0-2.5 1.67-2.5 2.5 0-.83-.5-2.5-2.5-2.5.83 0 2.5-.5 2.5-2.5 0 2 1.67 2.5 2.5 2.5Z"/>
+            </svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">€ 899</div>
+              <div class="text-gray-600 dark:text-gray-400 font-medium text-sm">/ one-time</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-2 mb-4 text-sm">You pay once, access forever</div>
+            <a class="bg-gray-800 dark:bg-gray-600 hover:bg-gray-700 dark:hover:bg-gray-50 dark:text-white dark:hover:text-gray-950 py-2.5 px-4 inline-block w-full text-white rounded-full font-medium transition-all text-sm" href="#" ">Get Unlimited Access</a>
+          </div>
+          <div class="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <ul class="flex flex-col gap-1.5 text-sm">
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">License for <strong>unlimited users</strong></span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100"><strong>Priority Request Icons</strong></span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Complete icon set (11,000+ icons)</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">3 styles: Line, Duotone, Solid</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">SVG download & copy</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Figma file download</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Web app access</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Team member invitations</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Priority support</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Lifetime updates</span></li>
+              <li><span class="mr-2 text-gray-700 dark:text-gray-300">✓</span><span class="text-gray-900 dark:text-gray-100">Unlimited projects</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- Legacy Options & Free Version -->
+    <div class="mt-12 md:mt-16 mb-12 md:mb-16">
+      <h3 class="text-xl md:text-2xl font-bold text-center mb-3 text-gray-900 dark:text-gray-100">Alternative Options</h3>
+      <p class="text-center text-gray-600 dark:text-gray-400 mb-6 text-sm md:text-base">Legacy licenses and free access</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+  
+        <div class="border border-gray-200 dark:border-gray-700 rounded-xl shadow dark:shadow-gray-900/10 overflow-hidden opacity-75">
+          <div class="bg-gray-800 dark:bg-gray-900 text-white px-2 py-4 text-center font-medium text-sm">
+            Legacy Solo — 1 user
+          </div>
+          <div class="py-5 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-8 mx-auto mb-2 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" vector-effect="non-scaling-stroke"/></svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">$ 99</div>
+              <div class="text-gray-600 dark:text-gray-400 font-medium text-xs">/ one-time</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-1.5 mb-3 text-xs">Figma file + SVG download only</div>
+            <a class="bg-gray-800 dark:bg-gray-600 hover:bg-gray-700 dark:hover:bg-gray-50 dark:text-white dark:hover:text-gray-950 py-2 px-3 inline-block w-full text-white rounded-full font-medium transition-all text-xs" target="_blank" href="{{settings.gumroad_solo}}">Buy Solo license</a>
+          </div>
+          <div class="p-3 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <p class="text-xs text-gray-600 dark:text-gray-400">Legacy license includes {{settings.icons}} icons in 3 styles, Figma file, IconJar file, exported SVG files, and lifetime access. Limited to Figma-only features.</p>
+          </div>
+        </div>
+  
+        <div class="border border-gray-200 dark:border-gray-700 rounded-xl shadow dark:shadow-gray-900/10 overflow-hidden opacity-75">
+          <div class="bg-gray-800 dark:bg-gray-900 text-white px-2 py-4 text-center font-medium text-sm">
+            Legacy Team — Unlimited users
+          </div>
+          <div class="py-5 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-8 mx-auto mb-2 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 10.8a3 3 0 0 0 0-5.6m5 5.6a3 3 0 0 0 0-5.6M2 19v-2a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v2m5 0v-2a3 3 0 0 0-3-3m8 5v-2a3 3 0 0 0-3-3m-9-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" vector-effect="non-scaling-stroke"/></svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">$ 299</div>
+              <div class="text-gray-600 dark:text-gray-400 font-medium text-xs">/ one-time</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-1.5 mb-3 text-xs">Figma file + SVG download only</div>
+            <a class="bg-gray-800 dark:bg-gray-600 hover:bg-gray-700 dark:hover:bg-gray-50 dark:text-white dark:hover:text-gray-950 py-2 px-3 inline-block w-full text-white rounded-full font-medium transition-all text-xs" target="_blank" href="{{settings.gumroad_teams}}">Buy Team license</a>
+          </div>
+          <div class="p-3 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <p class="text-xs text-gray-600 dark:text-gray-400">Legacy team license includes {{settings.icons}} icons in 3 styles, Figma file, IconJar file, exported SVG files, and lifetime access for unlimited users. Limited to Figma-only features.</p>
+          </div>
+        </div>
+
+        <div class="border border-blue-100 dark:border-blue-800 rounded-xl shadow dark:shadow-gray-900/10 overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20">
+          <div class="bg-gray-800 dark:bg-gray-900 text-white px-2 py-4 text-center font-medium text-sm">
+            Free Access
+          </div>
+          <div class="py-5 px-4 bg-white dark:bg-gray-800 text-center">
+            <svg class="size-8 mx-auto mb-2 text-gray-900 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12c-6.4 0-8 5.33-8 8 0-6.4-5.33-8-8-8 6.4 0 8-5.33 8-8 0 6.4 5.33 8 8 8ZM7 4C4.6 4 4 6 4 7c0-1-.6-3-3-3 1 0 3-.6 3-3 0 2.4 2 3 3 3ZM22 19.5c-2 0-2.5 1.67-2.5 2.5 0-.83-.5-2.5-2.5-2.5.83 0 2.5-.5 2.5-2.5 0 2 1.67 2.5 2.5 2.5Z"/>
+            </svg>
+            <div class="flex items-center justify-center gap-1.5">
+              <div class="text-xl font-extrabold tracking-tight text-blue-600 dark:text-blue-400">Free</div>
+            </div>
+            <div class="text-gray-600 dark:text-gray-400 mt-1.5 mb-3 text-xs">Browse and explore</div>
+            <a 
+              href="https://www.figma.com/file/lD8ts3MLGYer7LLP76Oars?type=design&node-id=201%3A2&mode=design" 
+              target="_blank" 
+              class="bg-gray-800 dark:bg-gray-600 hover:bg-gray-700 dark:hover:bg-gray-50 dark:text-white dark:hover:text-gray-950 py-2 px-3 inline-block w-full text-white rounded-full font-medium transition-all text-xs"
+            >
+              Access Figma File
+            </a>
+          </div>
+          <div class="p-3 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+            <p class="text-xs text-gray-600 dark:text-gray-400">Explore some of the icons in Figma. Read-only access, no signup required. Perfect for trying before you buy.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     </div>
   </div>
