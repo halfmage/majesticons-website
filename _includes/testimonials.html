@@ -7,7 +7,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
         {% for x in settings.testimonials %}
         <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-6 flex flex-col justify-between">
-            <p class="mb-6">{{x.text}}</p>
+            <p class="mb-6 italic">"{{x.text}}"</p>
             <div class="flex w-full items-center justify-between">
                 <div class="w-auto h-6">
                     {% image x.avatar, x.name, "50vw" %}

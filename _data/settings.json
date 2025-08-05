@@ -25,16 +25,16 @@
       "avatar": "logo-untitled.png"
     },
     {
-      "name": "Designer.tips",
-      "text": "Majesticons is a great tool for designers that are looking for an easy way to create visuals. It comes with high quality templates, icons and illustrations in different formats.",
-      "link": "https://www.designer.tips/tools/majesticons",
-      "avatar": "logo-designertips.png"
-    },
-    {
       "name": "Hugeicons",
       "text": "Majesticons was crafted to offer both premium and open-source communities with meticulously designed high quality icons.",
       "link": "https://hugeicons.com/blog/development/best-open-source-icon-libraries#19-majesticons",
       "avatar": "logo-hugeicons.png"
+    },
+    {
+      "name": "Designer.tips",
+      "text": "Majesticons is a great tool for designers that are looking for an easy way to create visuals. It comes with high quality templates, icons and illustrations in different formats.",
+      "link": "https://www.designer.tips/tools/majesticons",
+      "avatar": "logo-designertips.png"
     }
   ]
 }
